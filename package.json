@@ -1,0 +1,26 @@
+{
+  "name": "firebase-next",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "firebase:deploy": "firebase deploy",
+    "firebase:logs": "firebase functions:log"
+  },
+  "license": "ISC",
+  "main": "firebase-server.js",
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.9.2",
+    "firebase-functions": "^3.3.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "latest",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-markdown": "^4.0.6",
+    "swr": "^0.1.16"
+  }
+}

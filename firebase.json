@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "predeploy": [
+      "npm run build"
+    ],
+    "source": "."
+  },
+  "hosting": {
+    "public": ".next",
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "function": "nextApi"
+      },
+      {
+        "source": "**",
+        "function": "nextApp"
+      }
+    ]
+  }
+}

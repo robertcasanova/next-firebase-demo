@@ -1,0 +1,13 @@
+const {
+  PHASE_DEVELOPMENT_SERVER,
+} = require('next/constants')
+
+module.exports = phase => {
+  const isDev = phase === PHASE_DEVELOPMENT_SERVER
+  return {
+    target: 'serverless',
+    env: {
+      BASE_PATH: isDev ? 'http://localhost:3000' : 'https://%YOUR_FIREBASE_PROJECT_NAME%.firebaseapp.com/'
+    }
+  }
+}

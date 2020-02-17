@@ -1,0 +1,10 @@
+.next
+node_modules
+*.log
+yarn.lock
+out
+.history
+.firebase
+.firebaserc
+next.config.js
+.package-lock
